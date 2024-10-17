@@ -1,0 +1,19 @@
+
+.info {
+    margin: 1rem 1rem 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.title {
+    font-weight: bolder;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.img {
+    margin-top: 1rem;
+    width: auto;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 0rem;
+}

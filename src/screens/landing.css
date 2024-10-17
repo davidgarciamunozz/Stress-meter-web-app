@@ -1,0 +1,52 @@
+.container1{
+    display: flex;
+    background-image: url('https://github.com/LauraBonillaa/proyecto-pi/blob/main/Mask%20group.png?raw=true');
+    color: #ffff
+    ;
+    padding: 1rem 2rem 2rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 10px 10px 10px 10px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    font-weight: bolder;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.player{
+    margin-top: 2rem;
+}
+.button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #3E81D9;
+    color: #ffff;
+    border: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 20px 20px 20px 20px;
+}
+.info{
+    margin: 1rem 1rem 4rem 1rem;
+}
+.info2{
+    background-image: url('https://github.com/LauraBonillaa/proyecto-pi/blob/main/Mask%20group.png?raw=true');
+    color: #ffff
+    ;
+    padding: 1rem 2rem 2rem 2rem;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+}
+.img{
+    width: auto;
+justify-content: center;
+border-radius: 10px 10px 10px 10px;
+margin-left: 0rem;
+}
+.header{
+    background-color: #7EB2EC;
+    color: #ffff;
+    padding: 1.5rem 1rem 1.5rem 1.5rem;
+}
