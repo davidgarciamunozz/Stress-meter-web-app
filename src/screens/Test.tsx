@@ -3,6 +3,7 @@ import { db } from '../firebase'; // Importar la instancia de db
 import { collection, addDoc } from "firebase/firestore";
 import { useState } from "react";
 import NavBar from "../components/Navigation/NavBar";
+import Footer from '../components/Footer/Footer';
 
 export default function Test() {
     const [email, setEmail] = useState("");
@@ -61,6 +62,7 @@ export default function Test() {
                 Continuar
             </button>
         </div>
+        <Footer/>
         </div>
     );
 }
@@ -69,10 +71,12 @@ const styles: { [key: string]: React.CSSProperties } = {
         fontFamily: 'Arial, sans-serif',
         maxWidth: '400px',
         margin: '0 auto',
+        height: '80vh',
         padding: '20px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        paddingTop: '5rem',
     },
     title: {
         color: '#0077be',

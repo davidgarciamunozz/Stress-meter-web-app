@@ -18,9 +18,15 @@ function AppRoutes() {
       // Define tus preguntas y opciones
       const questions = [
         { question: "¿Con qué frecuencia te sientes abrumado por tus responsabilidades?", options: ["Casi nunca", "A veces", "Con frecuencia", "Todo el tiempo"] },
-        { question: "¿Qué animal prefieres?", options: ["Perro", "Gato", "Pájaro", "Pez"] },
-        { question: "¿Cuál es tu comida favorita?", options: ["Pizza", "Sushi", "Tacos", "Ensalada"] },
-        // ... más preguntas
+        { question: "¿Con qué frecuencia tienes dificultades para concentrarte en tus tareas?", options: ["Casi nunca", "A veces", "Con frecuencia", "Todo el tiempo"] },
+        { question: "¿Con qué frecuencia sientes que no puedes cumplir con tus plazos?", options: ["Casi nunca", "A veces", "Con frecuencia", "Todo el tiempo"] },
+        { question: "¿Con qué frecuencia experimentas cambios en tu apetito debido al estrés?", options: ["Casi nunca", "A veces", "Con frecuencia", "Todo el tiempo"] },
+        { question: "¿Con qué frecuencia te sientes irritable o ansioso?", options: ["Casi nunca", "A veces", "Con frecuencia", "Todo el tiempo"] },
+        { question: "¿Con qué frecuencia sientes que no tienes tiempo suficiente para ti mismo?", options: ["Casi nunca", "A veces", "Con frecuencia", "Todo el tiempo"] },
+        { question: "¿Con qué frecuencia experimentas problemas para dormir?", options: ["Casi nunca", "A veces", "Con frecuencia", "Todo el tiempo"] },
+        { question: "¿Con qué frecuencia sientes que tu rendimiento académico se ve afectado por el estrés?", options: ["Casi nunca", "A veces", "Con frecuencia", "Todo el tiempo"] },
+        { question: "¿Con qué frecuencia buscas actividades para relajarte o desconectar?", options: ["Casi nunca", "A veces", "Con frecuencia", "Todo el tiempo"] },
+        { question: "¿Con qué frecuencia hablas con alguien sobre tus preocupaciones o problemas?", options: ["Casi nunca", "A veces", "Con frecuencia", "Todo el tiempo"] },
     ];
     const handleBack = () => {
         if (currentQuestionIndex > 0) {

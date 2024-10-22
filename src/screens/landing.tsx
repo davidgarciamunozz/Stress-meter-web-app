@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer"
 import NavBar from "../components/Navigation/NavBar"
 import "./landing.css"
 import { Link } from "react-router-dom"
@@ -32,6 +33,7 @@ export default function Landing() {
                 <button className="button">Conocer más</button>
                 </Link>
             </div>
+            <Footer />
         </>
     )
 }

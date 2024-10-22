@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import NavBar from '../components/Navigation/NavBar';
 
 interface SurveyQuestionProps {
   questionNumber: number;
@@ -26,14 +27,15 @@ export default function SurveyQuestion({
   const handleContinue = () => {
     if (selectedOption) {
       onContinue(selectedOption);
+      // Limpiar la opción seleccionada después de continuar
+      setSelectedOption(null);
     }
   };
 
   return (
+    <>
+     <NavBar />
     <div style={styles.container}>
-      <div style={styles.header}>
-        <h1 style={styles.title}>Eco Campus</h1>
-      </div>
       <div style={styles.content}>
         <p style={styles.questionNumber}>
           Pregunta {questionNumber} de {totalQuestions}
@@ -69,6 +71,8 @@ export default function SurveyQuestion({
         </button>
       </div>
     </div>
+    </>
+   
   );
 }
 
@@ -78,8 +82,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     maxWidth: '400px',
     margin: '0 auto',
     padding: '20px',
-    backgroundColor: '#f0f8ff',
-    minHeight: '100vh',
+    minHeight: '90vh',
     display: 'flex',
     flexDirection: 'column',
   },
@@ -109,7 +112,8 @@ const styles: { [key: string]: React.CSSProperties } = {
   optionContainer: {
     marginBottom: '15px',
     backgroundColor: 'white',
-    padding: '10px',
+    padding: '15px 10px',
+    border: '1px solid #ccc',
     borderRadius: '5px',
   },
   radio: {

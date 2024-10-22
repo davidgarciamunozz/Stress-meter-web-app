@@ -22,11 +22,12 @@
 .button{
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: #3E81D9;
-    color: #ffff;
+    background-color: #ffff;
+    color: #3E81D9;
     border: none;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
 }
 .info{
     margin: 1rem 1rem 4rem 1rem;
