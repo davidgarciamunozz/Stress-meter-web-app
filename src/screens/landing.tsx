@@ -14,7 +14,7 @@ export default function Landing() {
                 <div className="container1">
                     <h1 className="title">¿Sientes el peso del estrés?</h1>
                     <p>Muchas veces pasamos por desapercibido este. Haz una pausa, evalúa tu estado actual y da el primer paso hacia tu bienestar.</p>
-                    <Link to="/test">
+                    <Link to="/Stress-meter-web-app/test">
                         <button className="button">Haz el test</button>
                     </Link>
                     <img className="img" src="https://i.pinimg.com/564x/2b/ab/56/2bab56d60f1c100be512f11c5d57574b.jpg"></img>
@@ -29,7 +29,7 @@ export default function Landing() {
                 <button className="button">Conocer más</button>
                 <h1 className="title">Playlist recomendada</h1>
                 <p>Encuentra el acompañamiento perfecto para tu bienestar. Elige lo que mejor se adapte a tu estado de ánimo.</p>
-                <Link to="/playlist">
+                <Link to="/Stress-meter-web-app/playlist">
                 <button className="button">Conocer más</button>
                 </Link>
             </div>

@@ -11,7 +11,7 @@ function NavBar() {
 
   return (
     <header style={styles.header}>
-      <Link to="/" style={styles.link}>
+      <Link to="/Stress-meter-web-app/" style={styles.link}>
         <h2 style={styles.title}>Ecocampus</h2>
       </Link>
       <div style={styles.menuContainer}>
@@ -20,9 +20,9 @@ function NavBar() {
         </button>
         {isMenuOpen && (
           <nav style={styles.nav}>
-            <Link to="/" style={styles.navLink} onClick={toggleMenu}>Inicio</Link>
-            <Link to="/ecocampus" style={styles.navLink} onClick={toggleMenu}>¿Qué es Ecocampus?</Link>
-            <Link to="/test" style={styles.navLink} onClick={toggleMenu}>Hacer Test</Link>
+            <Link to="/Stress-meter-web-app/" style={styles.navLink} onClick={toggleMenu}>Inicio</Link>
+            <Link to="/Stress-meter-web-app/ecocampus" style={styles.navLink} onClick={toggleMenu}>¿Qué es Ecocampus?</Link>
+            <Link to="/Stress-meter-web-app/test" style={styles.navLink} onClick={toggleMenu}>Hacer Test</Link>
           </nav>
         )}
       </div>

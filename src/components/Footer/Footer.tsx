@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <Link to="/" style={styles.link}>
+    <Link to="/Stress-meter-web-app/" style={styles.link}>
       <header style={styles.header}>
         <h2 style={styles.title}>Ecocampus</h2>
         <p>© 2024 Eco Campus, Inc.</p>
