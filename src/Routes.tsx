@@ -48,13 +48,13 @@ function AppRoutes() {
     
     return (
         <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/ecocampus" element={<EcoCampus />} />
-            <Route path="/playlist" element={<Playlist />} />
-            <Route path="/test" element={<Test/>} />
-            <Route path="/results" element={<Results responses={responses} />} />
-            <Route path="/form" element={<SurveyQuestion
+            <Route path="Stress-meter-web-app/" element={<Landing />} />
+            <Route path="Stress-meter-web-app/about" element={<About />} />
+            <Route path="Stress-meter-web-app/ecocampus" element={<EcoCampus />} />
+            <Route path="Stress-meter-web-app/playlist" element={<Playlist />} />
+            <Route path="Stress-meter-web-app/test" element={<Test/>} />
+            <Route path="Stress-meter-web-app/results" element={<Results responses={responses} />} />
+            <Route path="Stress-meter-web-app/form" element={<SurveyQuestion
                     questionNumber={currentQuestionIndex + 1}
                     totalQuestions={questions.length}
                     question={questions[currentQuestionIndex].question}
