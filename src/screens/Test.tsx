@@ -4,9 +4,11 @@ import { collection, addDoc } from "firebase/firestore";
 import { useState } from "react";
 import NavBar from "../components/Navigation/NavBar";
 import Footer from '../components/Footer/Footer';
+import { useNavigate } from 'react-router-dom';
 
 export default function Test() {
     const [email, setEmail] = useState("");
+    const navigate = useNavigate();
 
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
@@ -28,7 +30,7 @@ export default function Test() {
             // Notificar al usuario que su email ha sido almacenado en la base de datos
             alert('Email almacenado con éxito');
             // Redirigir al usuario a la página del formulario
-            window.location.href = "/Stress-meter-web-app/form";
+            navigate("/Stress-meter-web-app/form");
         } catch (e) {
             console.error("Error al agregar el email: ", e);
         }
