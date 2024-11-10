@@ -42,7 +42,7 @@ function AppRoutes() {
         if (currentQuestionIndex < questions.length - 1) {
             setCurrentQuestionIndex(currentQuestionIndex + 1);
         } else {
-            navigate("/results"); // Redirige a resultados si no hay más preguntas
+            navigate("/Stress-meter-web-app/results"); // Redirige a resultados si no hay más preguntas
         }
     };
     
