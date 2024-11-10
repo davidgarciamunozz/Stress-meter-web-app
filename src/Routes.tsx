@@ -9,6 +9,7 @@ import Results from "./screens/Results"
 import SurveyQuestion from "./screens/Form"
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
+import NotFoundPage from "./errors/404"
 
 function AppRoutes() {
     const [responses, setResponses] = useState<string[]>([]); // Almacena las respuestas
@@ -48,6 +49,9 @@ function AppRoutes() {
     
     return (
         <Routes>
+            {/* 404 error page */}
+            <Route path="*" element={<NotFoundPage />} />
+            {/* Routes */}
             <Route path="/Stress-meter-web-app/" element={<Landing />} />
             <Route path="/Stress-meter-web-app/about" element={<About />} />
             <Route path="/Stress-meter-web-app/ecocampus" element={<EcoCampus />} />
