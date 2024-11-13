@@ -1,6 +1,6 @@
 import NavBar from "../components/Navigation/NavBar"
 import "./EcoCampus.css"
-
+import Footer from "../components/Footer/Footer"
 export default function EcoCampus (){
     return(
         <>  
@@ -11,7 +11,8 @@ export default function EcoCampus (){
             Nuestro objetivo es proporcionar espacios que favorezcan la relajación y el bienestar físico y mental de la comunidad, mientras se cuida la preservación de las áreas verdes y se promueve el uso responsable de los recursos disponibles en el campus.</p>
             <img className="img" src="https://i.pinimg.com/564x/a2/39/ec/a239ec19d424a8fc45b5b8217cef8354.jpg"></img>
             </div>
-
+            <Footer />
+            
         </>
         
 
